@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>profile card drawer</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="contentBox">
+        <div class="content">
+          <h2>christiano ronaldo <br /><span>football player</span></h2>
+
+          <div class="imgBox">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+              alt=""
+            />
+          </div>
+          <button>more...</button>
+        </div>
+      </div>
+      <div class="toggle">
+        <span></span>
+      </div>
+    </div>
+    <script>
+      let card = document.querySelector(".card");
+      let cardToggle = document.querySelector(".toggle");
+      cardToggle.onclick = function () {
+        card.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
